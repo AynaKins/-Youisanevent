@@ -1,0 +1,31 @@
+{
+  "name": "ona-sobytie",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:flash": "tsc -b && vite build --config vite.offline.config.ts && node scripts/prepare-flash.mjs",
+    "preview": "vite preview",
+    "serve": "vite preview --host 0.0.0.0 --port 4173 --strictPort"
+  },
+  "dependencies": {
+    "@fontsource-variable/comfortaa": "^5.2.8",
+    "@fontsource-variable/manrope": "^5.2.8",
+    "@vitejs/plugin-react": "^4.3.4",
+    "framer-motion": "^11.15.0",
+    "phaser": "^3.87.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "sass": "^1.83.0",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.5",
+    "vite-plugin-singlefile": "^2.3.3"
+  }
+}
